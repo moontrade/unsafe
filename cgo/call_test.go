@@ -28,7 +28,7 @@ func BenchmarkCall(b *testing.B) {
 func TestSleep(t *testing.T) {
 	runtime.LockOSThread()
 	defer runtime.UnlockOSThread()
-	for i := 0; i < 10000; i++ {
+	for i := 0; i < 10; i++ {
 		NonBlocking((*byte)(cgo.Sleep), uintptr(time.Second), 0)
 		println(time.Now().UnixNano())
 	}
