@@ -1,7 +1,7 @@
 package cgo
 
 /*
-#cgo CXXFLAGS: -std=c++20 -I./
+#cgo CXXFLAGS: -std=c++2a -I./
 #cgo LDFLAGS: -lstdc++
 #include "trampoline.h"
 */
