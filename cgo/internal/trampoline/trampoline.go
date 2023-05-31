@@ -1,7 +1,7 @@
-package cgo
+package trampoline
 
 /*
-#cgo CXXFLAGS: -std=c++20 -I./
+#cgo CXXFLAGS: -std=c++11 -I./
 #cgo LDFLAGS: -lstdc++
 #include "trampoline.h"
 */

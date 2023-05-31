@@ -1,11 +1,10 @@
 //go:build !tinygo && (amd64 || arm64)
-// +build !tinygo
-// +build amd64 arm64
 
 package rpmalloc
 
 /*
 //#cgo darwin,amd64 LDFLAGS: -Wl,-rpath,${SRCDIR}/lib/darwin_amd64 -L${SRCDIR}/lib/darwin_amd64
+#cgo CFLAGS: -I./ -w
 #cgo darwin,amd64 LDFLAGS: -ldl -lc -lm
 #cgo darwin,arm64 LDFLAGS: -ldl -lc -lm
 #cgo darwin,amd64 CFLAGS: -I./ -w

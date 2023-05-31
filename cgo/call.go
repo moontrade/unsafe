@@ -2,7 +2,7 @@
 
 package cgo
 
-import "github.com/moontrade/unsafe/cgo/cgo"
+import "github.com/moontrade/unsafe/cgo/internal/trampoline"
 
 // NonBlocking C function fn without going all the way through cgo
 // Be very careful using it. If the C code blocks it can/will
@@ -17,5 +17,5 @@ import "github.com/moontrade/unsafe/cgo/cgo"
 func NonBlocking(fn *byte, arg0, arg1 uintptr)
 
 func Blocking(fn *byte, arg0, arg1 uintptr) {
-	cgo.Blocking(fn, arg0, arg1)
+	trampoline.Blocking(fn, arg0, arg1)
 }

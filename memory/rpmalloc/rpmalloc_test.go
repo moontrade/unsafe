@@ -13,7 +13,7 @@ import (
 )
 
 func TestCall(t *testing.T) {
-
+	Malloc(64)
 }
 
 func TestGlobalAlloc(t *testing.T) {

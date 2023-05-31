@@ -23,7 +23,7 @@ operator new(std::size_t size) noexcept(false) {
 	return rpmalloc(size);
 }
 
-extern void* __CRTDECL
+extern void* __CRTDECL``
 operator new[](std::size_t size) noexcept(false) {
 	return rpmalloc(size);
 }

@@ -89,7 +89,7 @@ type ThreadStats struct {
 type SpanStats struct {
 	//! Currently used number of spans
 	Current uintptr
-	//! High water mark of spans used
+	//! High watermark of spans used
 	Peak uintptr
 	//! Number of spans transitioned to global cache
 	ToGlobal uintptr
