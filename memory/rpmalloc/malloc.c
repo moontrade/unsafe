@@ -17,6 +17,8 @@
 #include <sys/types.h>
 #endif
 
+#include <stddef.h>
+
 #ifndef ARCH_64BIT
 #  if defined(__LLP64__) || defined(__LP64__) || defined(_WIN64)
 #    define ARCH_64BIT 1
